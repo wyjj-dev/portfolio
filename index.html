@@ -18,7 +18,8 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
+                <li>
+                    <img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
                         src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color icon">
                 </li>
             </ul>
@@ -34,13 +35,12 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-links">
+            <ul class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-
-            </div>
+            </ul>
         </div>
     </nav>
     <section id="profile">
@@ -54,15 +54,17 @@
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Jeremy-CV-2026.pdf')">Download
                     CV</button>
-                <button class="btn btn-color-1" onclick=location.href='./#contact'>Contact Info</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
-                    src-dark="./assets/linkedin_dark.png" alt="linkedin Profile" class="icon linkedin-icon"
-                    onclick="location.href='https://www.linkedin.com//in/wyjj'">
-                <img src="./assets/github_light.png" src-light="./assets/github_light.png"
-                    src-dark="./assets/github_dark.png" alt="Github Profile" class="icon github-icon"
-                    onclick="location.href='https://www.github.com/'">
+                <a href="https://www.linkedin.com/in/wyjj" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                        src-dark="./assets/linkedin_dark.png" alt="LinkedIn Profile" class="icon linkedin-icon">
+                </a>
+                <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/github_light.png" src-light="./assets/github_light.png"
+                        src-dark="./assets/github_dark.png" alt="Github Profile" class="icon github-icon">
+                </a>
             </div>
         </div>
     </section>
@@ -71,7 +73,7 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section_pic-container">
-                <img src="assets/about-pic.png" alt="Profile Pictrure" class="about-pic">
+                <img src="assets/about-pic.png" alt="Profile Picture" class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-container">
@@ -95,7 +97,6 @@
                         My background includes programming, data analysis, and algorithm development, which I apply to
                         real-world
                         projects.<br><br>
-
                         Additionally, I have a passion for aviation, having gained experience in basic flight maneuvers
                         with
                         single-prop planes. I aim to combine my skills in AI/ML with my interest in aviation to
@@ -106,8 +107,10 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-            alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+        <a href="./#experience">
+            <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+                alt="Arrow to Experience section" class="icon arrow">
+        </a>
     </section>
     <section id="experience">
         <p class="section_text_p1">Explore My</p>
@@ -149,14 +152,6 @@
                                 <p>Basic</p>
                             </div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
                     </div>
                 </div>
                 <div class="details-container">
@@ -188,10 +183,25 @@
                         </article>
                     </div>
                 </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </div>
-        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-            alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+        <a href="./#projects">
+            <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+                alt="Arrow to Projects section" class="icon arrow">
+        </a>
     </section>
     <section id="projects">
         <p class="section_text_p1">Browse My</p>
@@ -236,8 +246,10 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-            alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+        <a href="./#contact">
+            <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+                alt="Arrow to Contact section" class="icon arrow">
+        </a>
     </section>
     <section id="contact">
         <p class="section_text_p1">Get in Touch</p>
@@ -246,12 +258,13 @@
             <div class="contact-info-container">
                 <img src="./assets/email_light.png" src-light="./assets/email_light.png"
                     src-dark="./assets/email_dark.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:jeremy-wong1998@hotmail.com">jeremy-wong1998@hotmail.com</a></p>
+                <p><a href="mailto:jeremy-wong1998@hotmail.com">wyjj.dev@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
-                    src-dark="./assets/linkedin_dark.png" alt="linkedin Profile" class="icon linkedin-icon"
-                    onclick="location.href='https://www.linkedin.com/in/wyjj'">
+                <a href="https://www.linkedin.com/in/wyjj" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                        src-dark="./assets/linkedin_dark.png" alt="LinkedIn Profile" class="icon linkedin-icon">
+                </a>
                 <p><a href="https://linkedin.com/in/wyjj">LinkedIn</a></p>
             </div>
         </div>
@@ -267,7 +280,7 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Jeremy Wong<br>All Rights Reserved</p>
+        <p>Copyright &#169; 2026 Jeremy Wong<br>All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
 </body>
