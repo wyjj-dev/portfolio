@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Jeremy Wong</div>
@@ -16,35 +18,23 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><img 
-                    id="modeToggle"
-                    class="icon color-icon"
-                    src="./assets/theme_light.png"
-                    src-light="./assets/theme_light.png"
-                    src-dark="./assets/theme_dark.png"
-                    alt="Color icon"
-                >
-            </li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color icon">
+                </li>
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Jeremy Wong</div>
         <div class="hamburger-menu">
-            <img 
-                id="modeToggle2"
-                class="icon color-icon mode-icon"
-                src="./assets/theme_light.png"
-                src-light="./assets/theme_light.png"
-                src-dark="./assets/theme_dark.png"
-                alt="Color icon"
-            >
+            <img id="modeToggle2" class="icon color-icon mode-icon" src="./assets/theme_light.png"
+                src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color icon">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-links">  
+            <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -62,26 +52,17 @@
             <h1 class="title">Jeremy Wong</h1>
             <p class="section_text_p2">Jr. AI/ML Software Engineer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Jeremy CV (Online).pdf')">Download CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Jeremy-CV-2026.pdf')">Download
+                    CV</button>
                 <button class="btn btn-color-1" onclick=location.href='./#contact'>Contact Info</button>
             </div>
             <div id="socials-container">
-                <img 
-                    src="./assets/linkedin_light.png"
-                    src-light="./assets/linkedin_light.png"
-                    src-dark="./assets/linkedin_dark.png"
-                    alt="linkedin Profile"
-                    class = "icon linkedin-icon"
-                    onclick="location.href='https://www.linkedin.com//in/wyjj'"
-                >
-                <img 
-                    src="./assets/github_light.png"
-                    src-light="./assets/github_light.png"
-                    src-dark="./assets/github_dark.png"
-                    alt="Github Profile"
-                    class = "icon github-icon"
-                    onclick="location.href='https://www.github.com/'"
-                >
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="linkedin Profile" class="icon linkedin-icon"
+                    onclick="location.href='https://www.linkedin.com//in/wyjj'">
+                <img src="./assets/github_light.png" src-light="./assets/github_light.png"
+                    src-dark="./assets/github_dark.png" alt="Github Profile" class="icon github-icon"
+                    onclick="location.href='https://www.github.com/'">
             </div>
         </div>
     </section>
@@ -90,59 +71,43 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section_pic-container">
-                <img 
-                    src="assets/about-pic.png" 
-                    alt="Profile Pictrure"
-                    class="about-pic"
-                >
+                <img src="assets/about-pic.png" alt="Profile Pictrure" class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-container">
                     <div class="details-container">
-                        <img 
-                            src="./assets/experience_light.png"
-                            src-light="./assets/experience_light.png"
-                            src-dark="./assets/experience_dark.png"
-                            alt="Experience Icon" 
-                            class="icon"
-                        >
+                        <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+                            src-dark="./assets/experience_dark.png" alt="Experience Icon" class="icon">
                         <h3>Experience</h3>
                         <p>Fresh Graduate<br> AI/ML Engineer</p>
                     </div>
                     <div class="details-container">
-                        <img 
-                        src="./assets/education_light.png" 
-                        src-light="./assets/education_light.png" 
-                        src-dark="./assets/education_dark.png" 
-                        alt="Education Icon" 
-                        class="icon"
-                        >
+                        <img src="./assets/education_light.png" src-light="./assets/education_light.png"
+                            src-dark="./assets/education_dark.png" alt="Education Icon" class="icon">
                         <h3>Education</h3>
                         <p>B.Sci. Bachelors Degree ML/AI</p>
                     </div>
                 </div>
                 <div class="text-container">
                     <p>
-                        I am a Computer Science student with a strong interest in artificial intelligence and machine learning.
-                        My background includes programming, data analysis, and algorithm development, which I apply to real-world 
+                        I am a Computer Science student with a strong interest in artificial intelligence and machine
+                        learning.
+                        My background includes programming, data analysis, and algorithm development, which I apply to
+                        real-world
                         projects.<br><br>
-                        
-                        Additionally, I have a passion for aviation, having gained experience in basic flight maneuvers with 
-                        single-prop planes. I aim to combine my skills in AI/ML with my interest in aviation to contribute to 
-                        innovations in autonomous systems and flight optimization. I am eager to learn and grow in a 
+
+                        Additionally, I have a passion for aviation, having gained experience in basic flight maneuvers
+                        with
+                        single-prop planes. I aim to combine my skills in AI/ML with my interest in aviation to
+                        contribute to
+                        innovations in autonomous systems and flight optimization. I am eager to learn and grow in a
                         collaborative environment where I can create impactful solutions.
                     </p>
                 </div>
             </div>
         </div>
-        <img 
-            src="./assets/arrow_light.png" 
-            src-light="./assets/arrow_light.png" 
-            src-dark="./assets/arrow_dark.png" 
-            alt="Arrow Icon" 
-            class="icon arrow" 
-            onclick="location.href='./#experience'"
-        >
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
     <section id="experience">
         <p class="section_text_p1">Explore My</p>
@@ -153,65 +118,40 @@
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>HTML</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>CSS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Javascript</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Typescript</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Python</h3>
                                 <p>Experienced</p>
@@ -223,39 +163,24 @@
                     <h2 class="experience-sub-title">Backend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Node JS</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Express JS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img 
-                                src="./assets/checkmark_light.png" 
-                                src-light="./assets/checkmark_light.png" 
-                                src-dark="./assets/checkmark_dark.png" 
-                                alt="Experience Icon"
-                                class="icon"
-                            >
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Git</h3>
                                 <p>Experienced</p>
@@ -265,14 +190,8 @@
                 </div>
             </div>
         </div>
-        <img 
-            src="./assets/arrow_light.png" 
-            src-light="./assets/arrow_light.png" 
-            src-dark="./assets/arrow_dark.png" 
-            alt="Arrow Icon" 
-            class="icon arrow" 
-            onclick="location.href='./#projects'"
-        >   
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
     <section id="projects">
         <p class="section_text_p1">Browse My</p>
@@ -281,80 +200,58 @@
             <div class="about-container">
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img 
-                            src="./assets/project-1.png" 
-                            alt="Project 1"
-                            class="project-img"
-                        >
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Project 1</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
+                            Demo</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img 
-                            src="./assets/project-2.png" 
-                            alt="Project 2"
-                            class="project-img"
-                        >
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Project 2</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
+                            Demo</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img 
-                            src="./assets/project-3.png" 
-                            alt="Project 3"
-                            class="project-img"
-                        >
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Project 3</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
+                            Demo</button>
                     </div>
                 </div>
             </div>
         </div>
-        <img 
-            src="./assets/arrow_light.png" 
-            src-light="./assets/arrow_light.png" 
-            src-dark="./assets/arrow_dark.png" 
-            alt="Arrow Icon" 
-            class="icon arrow" 
-            onclick="location.href='./#contact'"
-        > 
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
     <section id="contact">
         <p class="section_text_p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img 
-                    src="./assets/email_light.png"
-                    src-light="./assets/email_light.png"
-                    src-dark="./assets/email_dark.png"
-                    alt="Email icon"
-                    class="icon contact-icon email-icon"
-                >
+                <img src="./assets/email_light.png" src-light="./assets/email_light.png"
+                    src-dark="./assets/email_dark.png" alt="Email icon" class="icon contact-icon email-icon">
                 <p><a href="mailto:jeremy-wong1998@hotmail.com">jeremy-wong1998@hotmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img 
-                    src="./assets/linkedin_light.png"
-                    src-light="./assets/linkedin_light.png"
-                    src-dark="./assets/linkedin_dark.png"
-                    alt="linkedin Profile"
-                    class = "icon linkedin-icon"
-                    onclick="location.href='https://www.linkedin.com/in/wyjj'"
-                >
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="linkedin Profile" class="icon linkedin-icon"
+                    onclick="location.href='https://www.linkedin.com/in/wyjj'">
                 <p><a href="https://linkedin.com/in/wyjj">LinkedIn</a></p>
             </div>
         </div>
@@ -374,4 +271,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
