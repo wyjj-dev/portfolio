@@ -60,12 +60,15 @@ function setLightMode() {
 // Hide/show nav on scroll
 let lastScrollY = window.scrollY;
 const desktopNav = document.getElementById('desktop-nav');
+const hamburgerNav = document.getElementById('hamburger-nav');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > lastScrollY && window.scrollY > 80) {
         desktopNav.classList.add('hidden');
+        hamburgerNav.classList.add('hidden');
     } else {
         desktopNav.classList.remove('hidden');
+        hamburgerNav.classList.remove('hidden');
     }
     lastScrollY = window.scrollY;
 });
