@@ -56,3 +56,16 @@ function setLightMode() {
         icon.src = icon.getAttribute("src-light");
     });
 }
+
+// Hide/show nav on scroll
+let lastScrollY = window.scrollY;
+const desktopNav = document.getElementById('desktop-nav');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 80) {
+        desktopNav.classList.add('hidden');
+    } else {
+        desktopNav.classList.remove('hidden');
+    }
+    lastScrollY = window.scrollY;
+});
