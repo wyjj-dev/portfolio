@@ -286,10 +286,9 @@ nav a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    padding-bottom: 4vh;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
 }
 
 .section-container {
@@ -299,12 +298,11 @@ section {
 
 
 /* Profile Section */
-
 #profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    padding-top: 10rem;
 }
 
 #profile .section_pic-container img {
