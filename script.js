@@ -79,3 +79,30 @@ window.addEventListener('scroll', () => {
     }
     lastScrollY = window.scrollY;
 });
+
+// Typewriter
+const roles = ["Frontend Engineer", "AI/ML Enthusiast", "Aviation Hobbyist"];
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typewriterEl = document.getElementById("typewriter");
+
+function type() {
+    const current = roles[roleIndex];
+    if (isDeleting) {
+        typewriterEl.textContent = current.substring(0, charIndex--);
+    } else {
+        typewriterEl.textContent = current.substring(0, charIndex++);
+    }
+
+    if (!isDeleting && charIndex === current.length + 1) {
+        setTimeout(() => isDeleting = true, 1500);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
