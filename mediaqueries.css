@@ -49,7 +49,9 @@
     }
 
     section {
-        margin: 0 5%;
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     /* Sections */
@@ -68,6 +70,12 @@
 
     /* Images */
     .section_pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 1rem;
+    }
+
+    .pic-frame {
         width: 275px;
         height: 275px;
         margin: 0 auto 1rem;
