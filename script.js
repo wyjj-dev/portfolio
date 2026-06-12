@@ -1,3 +1,5 @@
+// ── Hamburger Menu ──
+
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
@@ -6,7 +8,7 @@ function toggleMenu() {
 }
 
 
-// Dark and Light Mode
+// ── Theme (Dark / Light Mode) ──
 
 const btn = document.getElementById("modeToggle");
 const btn2 = document.getElementById("modeToggle2");
@@ -19,45 +21,40 @@ if (currentTheme === "dark") {
 
 btn.addEventListener("click", function () {
     setTheme();
-})
+});
 
 btn2.addEventListener("click", function () {
     setTheme();
-})
+});
 
-//Set Theme
 function setTheme() {
-    let currentTheme = document.body.getAttribute("theme")
-
+    const currentTheme = document.body.getAttribute("theme");
     if (currentTheme === "dark") {
         setLightMode();
-    }
-    else {
+    } else {
         setDarkMode();
     }
 }
 
-//Dark Mode
 function setDarkMode() {
     document.body.setAttribute("theme", "dark");
     localStorage.setItem("theme", "dark");
-
     themeIcons.forEach((icon) => {
         icon.src = icon.getAttribute("src-dark");
     });
 }
 
-//Light Mode
 function setLightMode() {
     document.body.removeAttribute("theme");
     localStorage.setItem("theme", "light");
-
     themeIcons.forEach((icon) => {
         icon.src = icon.getAttribute("src-light");
     });
 }
 
-// Hide/show nav on scroll
+
+// ── Navigation (Hide / Show on Scroll) ──
+
 let lastScrollY = window.scrollY;
 const desktopNav = document.getElementById('desktop-nav');
 const hamburgerNav = document.getElementById('hamburger-nav');
@@ -65,11 +62,14 @@ const hamburgerNav = document.getElementById('hamburger-nav');
 window.addEventListener('scroll', () => {
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
+
+    // Close hamburger menu on scroll
     if (menu.classList.contains('open')) {
         menu.classList.remove('open');
         icon.classList.remove('open');
     }
 
+    // Hide nav when scrolling down, show when scrolling up
     if (window.scrollY > lastScrollY && window.scrollY > 80) {
         desktopNav.classList.add('hidden');
         hamburgerNav.classList.add('hidden');
@@ -77,10 +77,13 @@ window.addEventListener('scroll', () => {
         desktopNav.classList.remove('hidden');
         hamburgerNav.classList.remove('hidden');
     }
+
     lastScrollY = window.scrollY;
 });
 
-// Typewriter
+
+// ── Typewriter Effect ──
+
 const roles = ["Frontend Engineer", "AI/ML Enthusiast", "Aviation Hobbyist"];
 let roleIndex = 0;
 let charIndex = 0;
@@ -89,6 +92,7 @@ const typewriterEl = document.getElementById("typewriter");
 
 function type() {
     const current = roles[roleIndex];
+
     if (isDeleting) {
         typewriterEl.textContent = current.substring(0, charIndex--);
     } else {
