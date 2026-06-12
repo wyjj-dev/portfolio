@@ -63,6 +63,13 @@ const desktopNav = document.getElementById('desktop-nav');
 const hamburgerNav = document.getElementById('hamburger-nav');
 
 window.addEventListener('scroll', () => {
+    const menu = document.querySelector('.menu-links');
+    const icon = document.querySelector('.hamburger-icon');
+    if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        icon.classList.remove('open');
+    }
+
     if (window.scrollY > lastScrollY && window.scrollY > 80) {
         desktopNav.classList.add('hidden');
         hamburgerNav.classList.add('hidden');

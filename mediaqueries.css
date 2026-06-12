@@ -1,7 +1,9 @@
 @media screen and (max-width: 1400px) {
     #profile {
-        height: 60vh;
-        margin-bottom: 6rem;
+        height: auto;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
     }
 
     .about-container {
@@ -76,6 +78,12 @@
         height: auto;
         padding-top: 8rem;
         padding-bottom: 2rem;
+    }
+
+    #hamburger-nav {
+        width: calc(100% - 8rem);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     article {
