@@ -493,8 +493,9 @@ section {
 /* ── About Section ── */
 #about {
     position: relative;
-    scroll-margin-top: 2rem;
-    margin-top: 2rem;
+    scroll-margin-top: 6rem;
+    margin-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .about-container {
@@ -517,12 +518,6 @@ section {
     border-radius: 2rem;
 }
 
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
-
 .details-container {
     padding: 1.5rem;
     flex: 1;
@@ -537,7 +532,8 @@ section {
 /* ── Experience Section ── */
 #experience {
     position: relative;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .experience-sub-title {
@@ -577,7 +573,8 @@ article .icon {
 /* ── Projects Section ── */
 #projects {
     position: relative;
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .color-container {
