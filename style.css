@@ -363,11 +363,36 @@ section {
     text-align: center;
 }
 
+#typewriter::after {
+    content: '|';
+    animation: blink 0.9s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 #socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+}
+
+#socials-container a {
+    transition: transform 0.2s ease;
+}
+
+#socials-container a:hover {
+    transform: translateY(-4px);
 }
 
 
