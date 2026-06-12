@@ -69,7 +69,7 @@ window.addEventListener('scroll', () => {
     }
 
     // Hide nav when scrolling down, show when scrolling up
-    if (scrollY > lastScrollY && scrollY > 80) {
+    if (scrollY > lastScrollY && scrollY > 80 && !navClicked) {
         desktopNav.classList.add('hidden');
         hamburgerNav.classList.add('hidden');
     } else {
@@ -83,6 +83,14 @@ window.addEventListener('scroll', () => {
 
 // ── Snap Scroll (profile to about) ──
 let hasSnapped = false;
+let navClicked = false;
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+        navClicked = true;
+        setTimeout(() => navClicked = false, 1000);
+    });
+});
 
 window.addEventListener('scroll', () => {
     const profile = document.getElementById('profile');
@@ -93,7 +101,7 @@ window.addEventListener('scroll', () => {
         hasSnapped = false;
     }
 
-    if (!hasSnapped && scrollY > profile.offsetHeight * 0.15 && scrollY < profileBottom) {
+    if (!hasSnapped && !navClicked && scrollY > profile.offsetHeight * 0.3 && scrollY < profileBottom) {
         hasSnapped = true;
         const aboutTop = document.getElementById('about').offsetTop;
         window.scrollTo({ top: aboutTop, behavior: 'smooth' });
