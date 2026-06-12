@@ -1,5 +1,4 @@
 // ── Hamburger Menu ──
-
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
@@ -9,7 +8,6 @@ function toggleMenu() {
 
 
 // ── Theme (Dark / Light Mode) ──
-
 const btn = document.getElementById("modeToggle");
 const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
@@ -83,9 +81,8 @@ window.addEventListener('scroll', () => {
 });
 
 
-// ── Snap Scroll (Profile → About on scroll down) ──
-
-window.addEventListener('wheel', (e) => {
+// ── Snap Scroll (Profile to About on scroll down) ──
+w.addEventListener('wheel', (e) => {
     const scrollY = window.scrollY;
     const profile = document.getElementById('profile');
     const profileBottom = profile.offsetTop + profile.offsetHeight;
@@ -102,7 +99,6 @@ window.addEventListener('wheel', (e) => {
 
 
 // ── Typewriter Effect ──
-
 const roles = ["Frontend Engineer", "AI/ML Enthusiast", "Aviation Hobbyist"];
 let roleIndex = 0;
 let charIndex = 0;

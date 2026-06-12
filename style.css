@@ -36,7 +36,6 @@
 
 
 /* ── Reset & Base ── */
-
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +78,6 @@ a:hover {
 
 
 /* ── Navigation (Desktop) ── */
-
 nav,
 .nav-links {
     display: flex;
@@ -147,7 +145,6 @@ nav a:hover {
 
 
 /* ── Navigation (Hamburger / Mobile) ── */
-
 #hamburger-nav {
     display: none;
     position: fixed;
@@ -270,7 +267,6 @@ nav a:hover {
 
 
 /* ── Icons ── */
-
 .icon {
     cursor: pointer;
     height: 2rem;
@@ -290,7 +286,6 @@ nav a:hover {
 
 
 /* ── Section Base ── */
-
 section {
     padding-top: 4vh;
     padding-bottom: 4vh;
@@ -307,7 +302,6 @@ section {
 
 
 /* ── Profile Section ── */
-
 #profile {
     display: flex;
     justify-content: center;
@@ -451,7 +445,6 @@ section {
 
 
 /* ── Buttons ── */
-
 .btn-container {
     display: flex;
     justify-content: center;
@@ -498,9 +491,10 @@ section {
 
 
 /* ── About Section ── */
-
 #about {
     position: relative;
+    scroll-margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .about-container {
@@ -541,9 +535,9 @@ section {
 
 
 /* ── Experience Section ── */
-
 #experience {
     position: relative;
+    scroll-margin-top: 2rem;
 }
 
 .experience-sub-title {
@@ -581,9 +575,9 @@ article .icon {
 
 
 /* ── Projects Section ── */
-
 #projects {
     position: relative;
+    scroll-margin-top: 2rem;
 }
 
 .color-container {
@@ -609,7 +603,6 @@ article .icon {
 
 
 /* ── Contact Section ── */
-
 #contact {
     display: flex;
     justify-content: center;
@@ -650,7 +643,6 @@ article .icon {
 
 
 /* ── Footer ── */
-
 footer {
     height: 26vh;
     margin: 0 1rem;
