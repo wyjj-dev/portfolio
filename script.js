@@ -81,7 +81,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-// ── Snap Scroll (Profile to About on scroll down) ──
+// ── Snap Scroll (Browser scorll) ──
 window.addEventListener('wheel', (e) => {
     const scrollY = window.scrollY;
     const profile = document.getElementById('profile');
@@ -90,6 +90,30 @@ window.addEventListener('wheel', (e) => {
     const scrollingDown = e.deltaY > 0;
 
     if (!isSnapping && scrollingDown && scrollY > triggerPoint && scrollY < profileBottom) {
+        isSnapping = true;
+        const aboutTop = document.getElementById('about').offsetTop;
+        window.scrollTo({ top: aboutTop, behavior: 'smooth' });
+        setTimeout(() => isSnapping = false, 1500);
+    }
+}, { passive: true });
+
+
+// ── Snap Scroll (Mobile touch) ──
+let touchStartY = 0;
+
+window.addEventListener('touchstart', (e) => {
+    touchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+window.addEventListener('touchend', (e) => {
+    const touchEndY = e.changedTouches[0].clientY;
+    const swipedDown = touchStartY > touchEndY + 50;
+    const scrollY = window.scrollY;
+    const profile = document.getElementById('profile');
+    const profileBottom = profile.offsetTop + profile.offsetHeight;
+    const triggerPoint = profile.offsetHeight * 0.05;
+
+    if (!isSnapping && swipedDown && scrollY > triggerPoint && scrollY < profileBottom) {
         isSnapping = true;
         const aboutTop = document.getElementById('about').offsetTop;
         window.scrollTo({ top: aboutTop, behavior: 'smooth' });
