@@ -82,7 +82,7 @@ window.addEventListener('scroll', () => {
 
 
 // ── Snap Scroll (Profile to About on scroll down) ──
-w.addEventListener('wheel', (e) => {
+window.addEventListener('wheel', (e) => {
     const scrollY = window.scrollY;
     const profile = document.getElementById('profile');
     const profileBottom = profile.offsetTop + profile.offsetHeight;
@@ -93,7 +93,7 @@ w.addEventListener('wheel', (e) => {
         isSnapping = true;
         const aboutTop = document.getElementById('about').offsetTop;
         window.scrollTo({ top: aboutTop, behavior: 'smooth' });
-        setTimeout(() => isSnapping = false, 1000);
+        setTimeout(() => isSnapping = false, 1500);
     }
 }, { passive: true });
 
