@@ -123,6 +123,7 @@ a {
     color: var(--secondary-color);
     text-decoration: none;
     text-decoration-color: var(--primary-color);
+    -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -251,8 +252,11 @@ nav a:hover {
     text-decoration: none;
 }
 
-.menu-links a:hover {
+.menu-links a:hover,
+.menu-links a:active {
     text-decoration: none;
+    background-color: color-mix(in srgb, var(--primary-color-3) 30%, transparent);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .menu-links li {
