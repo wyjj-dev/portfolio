@@ -168,12 +168,12 @@
 
     /* Footer */
     footer {
-        height: auto;
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
 
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
+    .footer-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
     }
 }
