@@ -53,13 +53,14 @@ function setLightMode() {
 }
 
 
-// ── Navigation (Hide / Show on Scroll) ──
-
+// ── Scroll Listener (Nav + Snap Scroll) ──
 let lastScrollY = window.scrollY;
+let isSnapping = false;
 const desktopNav = document.getElementById('desktop-nav');
 const hamburgerNav = document.getElementById('hamburger-nav');
 
 window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
 
@@ -70,7 +71,7 @@ window.addEventListener('scroll', () => {
     }
 
     // Hide nav when scrolling down, show when scrolling up
-    if (window.scrollY > lastScrollY && window.scrollY > 80) {
+    if (scrollY > lastScrollY && scrollY > 80) {
         desktopNav.classList.add('hidden');
         hamburgerNav.classList.add('hidden');
     } else {
@@ -78,8 +79,26 @@ window.addEventListener('scroll', () => {
         hamburgerNav.classList.remove('hidden');
     }
 
-    lastScrollY = window.scrollY;
+    lastScrollY = scrollY;
 });
+
+
+// ── Snap Scroll (Profile → About on scroll down) ──
+
+window.addEventListener('wheel', (e) => {
+    const scrollY = window.scrollY;
+    const profile = document.getElementById('profile');
+    const profileBottom = profile.offsetTop + profile.offsetHeight;
+    const triggerPoint = profile.offsetHeight * 0.05;
+    const scrollingDown = e.deltaY > 0;
+
+    if (!isSnapping && scrollingDown && scrollY > triggerPoint && scrollY < profileBottom) {
+        isSnapping = true;
+        const aboutTop = document.getElementById('about').offsetTop;
+        window.scrollTo({ top: aboutTop, behavior: 'smooth' });
+        setTimeout(() => isSnapping = false, 1000);
+    }
+}, { passive: true });
 
 
 // ── Typewriter Effect ──
