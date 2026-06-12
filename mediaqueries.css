@@ -60,6 +60,10 @@
         margin-top: 2rem;
     }
 
+    #about h1.title {
+        margin-bottom: 2rem;
+    }
+
     .about-container {
         margin-top: 0;
     }
