@@ -44,6 +44,11 @@
     }
 
     /* Images */
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
+    }
+
+    /* Images */
     .section_pic-container {
         width: 275px;
         height: 275px;
@@ -98,6 +103,11 @@
 
     .text-container {
         text-align: justify;
+    }
+
+    /* Project */
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 140px));
     }
 
     /* Contact */

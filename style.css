@@ -512,6 +512,8 @@ section {
 
 .details-container {
     padding: 1.5rem;
+    max-width: 260px;
+    width: 100%;
     flex: 1;
     background: var(--primary-color-2);
     border-radius: 2rem;
@@ -669,6 +671,13 @@ section {
     display: none;
 }
 
+/* ── Project Section ── */
+.projects-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 5rem;
+}
 
 /* ── Contact Section ── */
 #contact {
