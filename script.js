@@ -101,7 +101,7 @@ window.addEventListener('scroll', () => {
         hasSnapped = false;
     }
 
-    if (!hasSnapped && !navClicked && scrollY > profile.offsetHeight * 0.3 && scrollY < profileBottom) {
+    if (!hasSnapped && !navClicked && scrollY > profile.offsetHeight * 0.05 && scrollY < profileBottom) {
         hasSnapped = true;
         const aboutTop = document.getElementById('about').offsetTop;
         window.scrollTo({ top: aboutTop, behavior: 'smooth' });
