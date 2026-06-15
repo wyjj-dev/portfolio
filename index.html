@@ -10,11 +10,11 @@
 </head>
 
 <body>
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
@@ -24,6 +24,8 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Mobile Navigation -->
     <nav id="hamburger-nav">
         <div class="logo">Jeremy Wong</div>
         <div class="hamburger-menu">
@@ -36,12 +38,13 @@
                 src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color icon">
             <ul class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- Profile / Hero Section -->
     <section id="profile">
         <div class="section_pic-container">
             <img src="./assets/profile-pic.png" alt="Jeremy Profile Picture">
@@ -72,6 +75,8 @@
                 alt="Scroll down" class="icon scroll-arrow">
         </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
         <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
@@ -118,137 +123,60 @@
             </div>
         </div>
     </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-detail-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Javascript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Typescript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                                src-dark="./assets/checkmark_dark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <!-- Projects Section (with tag filter) -->
     <section id="projects">
         <p class="section_text_p1">Browse My</p>
         <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-container">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project 1</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
-                            Demo</button>
-                    </div>
+        <div class="filter-tags">
+            <span class="filter-tag active" data-tag="all">All</span>
+            <span class="filter-tag" data-tag="React">React</span>
+            <span class="filter-tag" data-tag="Vue">Vue</span>
+            <span class="filter-tag" data-tag="Node.js">Node.js</span>
+            <span class="filter-tag" data-tag="Python">Python</span>
+            <span class="filter-tag" data-tag="Supabase">Supabase</span>
+        </div>
+        <div class="projects-container">
+            <div class="details-container color-container" data-tags="HTML,CSS">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project 2</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
-                            Demo</button>
-                    </div>
+                <h2 class="experience-sub-title project-title">Project 1</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
+                        Demo</button>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project 3</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
-                            Demo</button>
-                    </div>
+            </div>
+            <div class="details-container color-container" data-tags="Vite,Vue,Ant Design">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 2</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
+                        Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container" data-tags="React,Supabase">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 3</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live
+                        Demo</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h1 class="title">Contact Me</h1>
         <h1 class="contact-heading">Let's build something.</h1>
@@ -271,10 +199,11 @@
             </a>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <ul class="footer-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
         </ul>
 
