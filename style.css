@@ -512,7 +512,6 @@ section {
 
 .details-container {
     padding: 1.5rem;
-    max-width: 260px;
     width: 100%;
     flex: 1;
     background: var(--primary-color-2);
@@ -631,9 +630,54 @@ section {
     color: var(--secondary-color);
 }
 
-.project-btn {
-    color: var(--secondary-color);
-    border-color: var(--container-border);
+.project-img-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.project-img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.project-tags {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    justify-content: flex-end;
+}
+
+.project-tags span {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--background-color) 80%, transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--container-border);
+    color: var(--secondary-color-2);
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-link-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    opacity: 0.6;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project-link-icon:hover {
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 /* ── Filter Tags ── */
@@ -675,7 +719,7 @@ section {
 .projects-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
     gap: 5rem;
 }
 
