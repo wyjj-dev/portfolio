@@ -44,8 +44,9 @@
     }
 
     /* Images */
-    .projects-container {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
+    .details-container {
+        width: 140px;
+        flex: 0 0 140px;
     }
 
     /* Images */
@@ -106,8 +107,9 @@
     }
 
     /* Project */
-    .projects-container {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 140px));
+    .details-container {
+        width: 160px;
+        flex: 0 0 160px;
     }
 
     /* Contact */
