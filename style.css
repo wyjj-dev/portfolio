@@ -663,8 +663,9 @@ section {
 
 .project-links {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
@@ -678,6 +679,47 @@ section {
 .project-link-icon:hover {
     opacity: 1;
     transform: translateY(-2px);
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+.live-demo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border: 1px solid #e63946;
+    border-radius: 20px;
+    color: #e63946;
+    font-size: 0.7rem;
+    text-decoration: none;
+    background: transparent;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.live-demo-btn:hover {
+    background: #e63946;
+    color: #fff;
+    text-decoration: none;
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e63946;
+    display: inline-block;
+}
+
+.live-demo-btn:hover .live-dot {
+    background-color: #fff;
 }
 
 /* ── Filter Tags ── */
