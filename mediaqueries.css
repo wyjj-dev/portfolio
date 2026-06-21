@@ -45,8 +45,8 @@
 
     /* Images */
     .details-container {
-        width: 140px;
-        flex: 0 0 140px;
+        flex: 0 1 calc(50% - 1.25rem);
+        max-width: 300px;
     }
 
     /* Images */
@@ -107,10 +107,6 @@
     }
 
     /* Project */
-    .details-container {
-        width: 160px;
-        flex: 0 0 160px;
-    }
 
     /* Contact */
     #contact {
